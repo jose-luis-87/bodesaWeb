@@ -1,0 +1,21 @@
+.HeaderWrapper{
+    display: flex;
+    flex-direction: row nowrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.navigate{
+    display: flex;
+    flex-direction: row nowrap;
+    align-items: center;
+    width: 70%;
+    justify-content: space-between;
+}
+.logoHeader{
+    width: 30%;
+}
