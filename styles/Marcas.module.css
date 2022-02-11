@@ -4,6 +4,8 @@
     display: flex;
     justify-content: center;
     align-items:  center;
+    align-content: center;
+    flex-flow: row wrap;
  }
  .wrapperMarcas>div{
    position: relative;
@@ -89,10 +91,14 @@
     cursor: pointer;
     z-index: 10;
 }
+.titleMarca{
+  margin-bottom: 24px;
+}
 
 @media(max-width: 768px){
   .wrapperMarcas{
     height: auto;
+    flex-flow: column nowrap;
   }
   .containerBrand{
     width: 100%;

@@ -26,6 +26,7 @@ let sliderRef = useRef<any>()
 }
 
   return <div className={styles.wrapperMarcas}>
+            <h1 className={styles.titleMarca}>Nuestras Marcas</h1>
             <div className={styles.carouselCont}>
                 <div className={styles.snapper} ></div>
                 <div className={styles.arrowleft} onClick={scrollR}>
@@ -35,12 +36,12 @@ let sliderRef = useRef<any>()
                     <Image src="/img/arrowleft.svg" objectFit='contain' layout='fill' alt="arrow-right"/>
                 </div>
                 <Carousel forwardRef={sliderRef}>
-                    <Brand callBack={()=>{scrollL()}} />
                     <Brand/>
                     <Brand/>
                     <Brand/>
                     <Brand/>
-                    <Brand callBack={()=>{scrollR()}}/>
+                    <Brand/>
+                    <Brand/>
                 </Carousel>
             </div>
             

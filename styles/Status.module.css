@@ -8,7 +8,7 @@
     width: 50%;
     height: 100%;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     padding: 4%;
@@ -29,8 +29,8 @@
     border-radius: 80%;
 } 
 .roundedImg{
-    width: 70%;
-    height: 68%;
+    width: 600px;
+    height: 600px;
     position: relative;
     border-radius: 100%;
 }
@@ -59,8 +59,8 @@
 .titleStatus{
     position: absolute;
     top: 24%;
-    left: -18%;
-    width: 42%;
+    left: -14%;
+    width: 60%;
     text-align: right;
 }
 @media(max-width: 768px){
@@ -73,7 +73,7 @@
         width: 100%;
         height: 50%;
         display: flex;
-        flex-flow: column wrap;
+        flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
         padding: 4%;
@@ -85,7 +85,7 @@
         height: 50%;
         position: relative;
         display: flex;
-        flex-flow: column wrap;
+        flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
         padding: 4%
@@ -99,5 +99,9 @@
     }
     .txtStatus{
         text-align: center;
+    }
+    .roundedImg{
+        width: 300px;
+        height: 300px;
     }
 }
