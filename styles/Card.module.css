@@ -1,0 +1,22 @@
+.wrapperCard{
+    position: absolute;
+    background-color: white;
+    border-radius: 24px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 12px;
+    height: auto;
+    box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.wrapperIcon{
+    width: 50%;
+}
+
+.wrapperH{
+    display: flex;
+    flex-flow: row nowrap;
+}

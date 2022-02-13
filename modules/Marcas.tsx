@@ -13,15 +13,14 @@ let sliderRef = useRef<any>()
          sliderRef.current.scrollLeft += sliderRef.current.offsetWidth;
      }
      
-     
  }
+
  const scrollR = () =>{
     
     console.log(sliderRef);
     if(sliderRef.current !== undefined){
         sliderRef.current.scrollLeft -= sliderRef.current.offsetWidth;
     }
-    
     
 }
 
@@ -44,7 +43,6 @@ let sliderRef = useRef<any>()
                     <Brand/>
                 </Carousel>
             </div>
-            
          </div>
 };
 

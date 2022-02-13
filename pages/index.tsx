@@ -3,6 +3,8 @@ import Hero from '../modules/Hero'
 import Layout from '../components/Layout'
 import Status from '../modules/Status'
 import Marcas from '../modules/Marcas'
+import MVV from '../modules/MVV'
+import Galeria  from '../modules/Galeria'
 
 const Home: NextPage = () => {
   return (
@@ -10,6 +12,8 @@ const Home: NextPage = () => {
         <Hero/>
         <Status/>
         <Marcas/>
+        <MVV/>
+        <Galeria/>
       </Layout>
   )
 }

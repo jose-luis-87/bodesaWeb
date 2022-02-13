@@ -6,13 +6,15 @@
     align-items:  center;
     align-content: center;
     flex-flow: row wrap;
- }
- .wrapperMarcas>div{
+}
+
+.wrapperMarcas>div{
    position: relative;
     display: flex;
     justify-content: center;
     align-items:  center;
- }  
+}  
+
 .carousel{
     position: relative;
     width: 90%;
@@ -23,7 +25,6 @@
         scrollbar-color: transparent transparent; /* thumb and track color */
     scrollbar-width: 0px;
 }
-
 
 .carousel::-webkit-scrollbar {
   width: 0;
@@ -41,7 +42,8 @@
 .carousel {
   -ms-overflow-style: none;
 }
- .snapper{
+
+.snapper{
     background-color: #D8EEDF;
     opacity: .5;
     width: 90%;
@@ -49,7 +51,7 @@
     position: absolute;
     top: 0;
     left: 5%
- }
+}
 
 
 .containerBrand{
@@ -79,6 +81,7 @@
     cursor: pointer;
     z-index: 10;
 }
+
 .arrowright{
     width: 40px;
     height: 40px;
@@ -91,6 +94,7 @@
     cursor: pointer;
     z-index: 10;
 }
+
 .titleMarca{
   margin-bottom: 24px;
 }
@@ -114,7 +118,7 @@
   .snapper{
     height:70%;
   }
- .arrowright, .arrowleft{
+  .arrowright, .arrowleft{
     
     top: 30%;
   }
