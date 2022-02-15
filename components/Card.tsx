@@ -9,7 +9,7 @@ const Card = ({t, l, r, b, w, h, text, p, signo, icon}:any)=>{
                 </div>
                 <div className={styles.wrapperH}>
                     <h4>{signo}</h4>
-                    <h1>{text}</h1>
+                    <h1 style={{marginBottom: '28px', marginTop: '28px'}}>{text}</h1>
                 </div>
                 
                 <P themed txt={p}/>

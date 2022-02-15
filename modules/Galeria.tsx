@@ -4,7 +4,7 @@ import styles from '../styles/Galeria.module.css'
 
 const Galeria = () => {
 
-  const [lightBox, setLightBox] = useState(true)
+  const [lightBox, setLightBox] = useState(false)
   const [currentImg, setCurrentImg] = useState('/img/placeholder.png')
 
   const toggleModal = (img:any) =>{
@@ -36,7 +36,7 @@ const Galeria = () => {
                 <Image  src="/img/placeholder.png" objectFit='cover' layout='fill' alt='gal5'/>
                 <HoverLink callBack={()=>{toggleModal('/img/placeholder.png')}}/>
             </div>
-            {lightBox&&<LightBox callBack={()=>{toggleModal('')}} img={currentImg}/>}
+            {lightBox && <LightBox callBack={()=>{toggleModal('')}} img={currentImg}/>}
         </div>
     </div>
   )
@@ -54,11 +54,11 @@ const HoverLink = ({callBack}:any) =>{
 
 const LightBox = ({callBack, img}:any) => {
     return <div className={styles.lightBox}>
-            <div className={styles.imgCont}>
-                <Image src={img} objectFit='cover' layout='fill' alt='iconHov'/>
-            </div>  
-            <div className={styles.closeIcon} onClick={callBack}>
-                <Image src="/img/close.svg" objectFit='cover' layout='fill' alt='iconHov'/>
-            </div>  
+                <div className={styles.imgCont}>
+                    <Image src={img} objectFit='cover' layout='fill' alt='iconHov'/>
+                </div>  
+                <div className={styles.closeIcon} onClick={callBack}>
+                    <Image src="/img/close.svg" objectFit='cover' layout='fill' alt='iconClose'/>
+                </div>  
            </div>
 }

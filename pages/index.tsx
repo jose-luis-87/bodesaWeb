@@ -5,6 +5,8 @@ import Status from '../modules/Status'
 import Marcas from '../modules/Marcas'
 import MVV from '../modules/MVV'
 import Galeria  from '../modules/Galeria'
+import BlogFeed from '../modules/BlogFeed'
+import Footer from '../modules/Footer'
 
 const Home: NextPage = () => {
   return (
@@ -14,6 +16,8 @@ const Home: NextPage = () => {
         <Marcas/>
         <MVV/>
         <Galeria/>
+        <BlogFeed/>
+        <Footer/>
       </Layout>
   )
 }

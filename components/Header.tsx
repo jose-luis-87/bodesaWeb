@@ -7,7 +7,7 @@ const Header = () => {
             <div className={styles.HeaderWrapper}>
                 <div className={styles.logoHeader}>
                     <Link href='/' passHref>
-                        <Image src="/img/logoBodesa.svg" width={200} height={100} alt="logo"/>
+                        <Image src="/img/logoBodesa.svg" width={180} height={60} alt="logo"/>
                     </Link>
                 </div>
                 <nav className={styles.navigate}>
