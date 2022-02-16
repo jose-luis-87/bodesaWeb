@@ -6,8 +6,11 @@ const Header = () => {
   return <header>
             <div className={styles.HeaderWrapper}>
                 <div className={styles.logoHeader}>
-                    <Link href='/' passHref>
-                        <Image src="/img/logoBodesa.svg" width={180} height={60} alt="logo"/>
+                    <Link href='/'>
+                        <a>
+                          <Image src="/img/logoBodesa.svg" width={180} height={60} alt="logo"/>  
+                        </a>
+                        
                     </Link>
                 </div>
                 <nav className={styles.navigate}>
