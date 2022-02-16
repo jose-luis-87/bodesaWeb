@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head'
 import Header from './Header';
+import Footer from '../modules/Footer';
 
 const Layout = ({children, pagina}:any) => {
   return <div>
@@ -10,6 +11,7 @@ const Layout = ({children, pagina}:any) => {
       </Head>
       <Header/>
       {children}
+      <Footer/>
   </div>;
 };
 

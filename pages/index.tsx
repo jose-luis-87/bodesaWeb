@@ -17,7 +17,7 @@ const Home: NextPage = () => {
         <MVV/>
         <Galeria/>
         <BlogFeed/>
-        <Footer/>
+        
       </Layout>
   )
 }

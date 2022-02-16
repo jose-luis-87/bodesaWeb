@@ -24,7 +24,7 @@ const Header = () => {
                         <p>Nuestras marcas</p>
                     </div>
                     <div>
-                        <Link href='/innovacion'>Blog</Link>
+                        <Link href='/blog'>Blog</Link>
                     </div>
                     <div>
                         <Link href='/prensa'>Prensa</Link>
