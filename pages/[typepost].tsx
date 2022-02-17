@@ -13,9 +13,8 @@ const Typepost = () => {
     <Layout pagina={router.asPath}>
       <Header/>
         <div className={styles.bannerPost}>
-        <CardBlog w={'33.33%'} f={'0 0 100%'} himg={ '60%'}/>
+          <CardBlog w={'33.33%'} f={'0 0 100%'} himg={ '60%'} img={'/img/galeria-03.jpg'}/>
         </div>
-     
         <BlogFeed/>
 
     </Layout>

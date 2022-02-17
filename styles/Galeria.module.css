@@ -83,4 +83,9 @@
         justify-content: center;
         flex-flow: column wrap;
     }
+    .imgCont{
+        width: 80%;
+        height: 40%;
+        position: relative;
+    }
 }

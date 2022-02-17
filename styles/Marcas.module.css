@@ -52,7 +52,9 @@
     top: 0;
     left: 5%
 }
-
+.desBrand>p{
+    text-align: center;
+}
 
 .containerBrand{
     width: 33.33%;
@@ -65,7 +67,7 @@
 
 .imgBrand{
     position: relative;
-    width: 100%;
+    width: 80%;
     height: 200px;
     margin: 0 auto;
 }

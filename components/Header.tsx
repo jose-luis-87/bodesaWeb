@@ -1,14 +1,40 @@
 import Link from "next/link"
 import Image from "next/image"
 import styles from '../styles/Header.module.css'
+import { useEffect, useState } from "react"
+import useScreenSize from "../hooks/useScreenSize"
 
 const Header = () => {
+  
+  const [scrolling, setScrolling] = useState(false)
+  const [actualScroll, setActualScroll] = useState(0)
+
+  useEffect(() => {
+    window.onscroll = ()=>{
+        let y = window.scrollY
+        console.log(scrolling);
+        console.log(y);
+        setActualScroll(y)
+        if( actualScroll !== 0 ){
+            setScrolling(true)
+        }
+        setTimeout(()=>{
+            setScrolling(false)
+        }, 3000)
+        return ()=>{
+            clearTimeout()
+        }
+    }
+  
+   
+  }, [actualScroll, scrolling])
+    
   return <header>
-            <div className={styles.HeaderWrapper}>
+            <div style={{ boxShadow: scrolling ?' 0px 8px 16px -12px #005200' : '', transition: 'all 0.5s ease-in-out'}}  className={styles.HeaderWrapper}>
                 <div className={styles.logoHeader}>
                     <Link href='/'>
                         <a>
-                          <Image src="/img/logoBodesa.png" objectFit="contain" layout="fill" alt="logo"/>  
+                          <Image src="/img/logoBodesa.svg" objectFit="contain" layout="fill" alt="logo"/>  
                         </a>
                         
                     </Link>

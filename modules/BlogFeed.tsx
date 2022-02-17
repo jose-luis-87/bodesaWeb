@@ -41,12 +41,12 @@ const BlogFeed = () => {
                     <Image src="/img/arrowleft.svg" objectFit='cover' layout='fill' alt="arrow-right"/>
                 </div>
                 <Carousel forwardRef={sliderRef}>
-                    <CardBlog w={width > 748 ?'33.33%':'100%'} f={width > 748 ?'0 0 33.33%':'0 0 100%'} himg={ '40%'}/>
-                    <CardBlog w={width > 748 ?'33.33%':'100%'} f={width > 748 ?'0 0 33.33%':'0 0 100%'} himg={ '40%'}/>
-                    <CardBlog w={width > 748 ?'33.33%':'100%'} f={width > 748 ?'0 0 33.33%':'0 0 100%'} himg={ '40%'}/>
-                    <CardBlog w={width > 748 ?'33.33%':'100%'} f={width > 748 ?'0 0 33.33%':'0 0 100%'} himg={ '40%'}/>
-                    <CardBlog w={width > 748 ?'33.33%':'100%'} f={width > 748 ?'0 0 33.33%':'0 0 100%'} himg={ '40%'}/>
-                    <CardBlog w={width > 748 ?'33.33%':'100%'} f={width > 748 ?'0 0 33.33%':'0 0 100%'} himg={ '40%'}/>
+                    <CardBlog  himg={ '40%'} img={'/img/galeria.jpg'}/>
+                    <CardBlog  himg={ '40%'} img={'/img/galeria-02.jpg'}/>
+                    <CardBlog  himg={ '40%'} img={'/img/galeria-03.jpg'}/>
+                    <CardBlog  himg={ '40%'} img={'/img/galeria-04.jpg'}/>
+                    <CardBlog  himg={ '40%'} img={'/img/galeria-05.jpg'}/>
+                    <CardBlog  himg={ '40%'} img={'/img/galeria-06.jpg'}/>
                 </Carousel>
             </div>
     </div>
@@ -55,23 +55,23 @@ const BlogFeed = () => {
 
 export default BlogFeed
 
-export const CardBlog = ({callBack, w, f, himg}: any)=>{
+export const CardBlog = ({callBack, w, f, himg, img}: any)=>{
 
     const router = useRouter()
 
     return <div style={{width: w, flex: f}} className={styles.containerCard} onClick={callBack}>
                 <div style={{height: himg}} className={styles.imgCard}>
-                    <Link href={`/${router.asPath}/name-blog`} passHref>
-                        <Image  src="/img/placeholder.png" objectFit='cover' layout='fill' alt='marina'/>
+                    <Link href={`/post/name-blog`} passHref>
+                        <Image  src={img}objectFit='cover' layout='fill' alt='marina'/>
                     </Link>
                 </div>
                 <div className={styles.desCard}>
-                    <Link href={`/${router.asPath}/name-blog`} passHref>
+                    <Link href={`/post/name-blog`} passHref>
                         <p style={{fontWeight: '900', marginTop: '32px', fontSize: '32px', cursor: 'pointer'}}>Title Blog feed</p>
                     </Link>
                     <p style={{ marginBottom: '32px'}}>Publicado por: <span>Juan García</span> | 14/01/2022</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat in nulla vestibulum pharetra. Velit egestas nec massa, imperdiet nunc tellus ridiculus placera. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat in nulla vestibulum pharetra. Velit egestas nec massa, imperdiet nunc tellus ridiculus placera...</p>
-                    <Link href={`/${router.asPath}/name-blog`} passHref>
+                    <Link href={`/post/name-blog`} passHref>
                         <p style={{ marginTop: '32px', textAlign: 'right', width: '100%', color:'#2D673E', fontWeight: '900', cursor: 'pointer'}}>Leer más...</p>
                     </Link>
                 </div>

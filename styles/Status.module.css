@@ -67,7 +67,7 @@
     .wrapperStatus{
         
         flex-flow: column nowrap;
-        height: 100vh;
+        height: 75vh;
     }
     .wrapperLeft{
         width: 100%;

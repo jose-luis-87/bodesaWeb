@@ -35,12 +35,10 @@ let sliderRef = useRef<any>()
                     <Image src="/img/arrowleft.svg" objectFit='contain' layout='fill' alt="arrow-right"/>
                 </div>
                 <Carousel forwardRef={sliderRef}>
-                    <Brand/>
-                    <Brand/>
-                    <Brand/>
-                    <Brand/>
-                    <Brand/>
-                    <Brand/>
+                    <Brand img={'/img/logo-bodegon.png'}/>
+                    <Brand img={'/img/logo-naveri.png'}/>
+                    <Brand img={'/img/celerity-logo.png'}/>
+                    <Brand img={'/img/logomxl.png'}/>
                 </Carousel>
             </div>
          </div>
@@ -48,10 +46,10 @@ let sliderRef = useRef<any>()
 
 export default Marcas;
 
-const Brand = ({callBack}: any)=>{
+const Brand = ({callBack, img}: any)=>{
     return <div className={styles.containerBrand} onClick={callBack}>
                 <div className={styles.imgBrand}>
-                    <Image  src="/img/LogoBodesa.svg" objectFit='contain' layout='fill' alt='marina'/>
+                    <Image  src={img} objectFit='contain' layout='fill' alt='marina'/>
                 </div>
                 <div className={styles.desBrand}>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat in nulla vestibulum pharetra. Velit egestas nec massa, imperdiet nunc tellus ridiculus placera.</p>

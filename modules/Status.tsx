@@ -7,7 +7,7 @@ const Status = () => {
   return <div className={styles.wrapperStatus}>
             <div className={styles.wrapperLeft}>
                 <div className={styles.roundedImg}>
-                    <Image className={styles.imgSquare} src="/img/status.jpg" objectFit='cover' layout='fill' alt='marina'/>
+                    <Image className={styles.imgSquare} src="/img/statusimg.jpg" objectFit='cover' layout='fill' alt='marina'/>
                 </div>
                 <CardStatus/>
             </div>

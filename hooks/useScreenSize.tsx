@@ -20,7 +20,7 @@ const useScreenSize = () => {
       window.removeEventListener("resize", handleResize)
     }
     
-  }, [width, height])
+  }, [])
   
  
 
