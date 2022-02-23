@@ -31,14 +31,25 @@ const Header = () => {
     
   return <header>
             <div style={{ boxShadow: scrolling ?' 0px 8px 16px -12px #005200' : '', transition: 'all 0.5s ease-in-out'}}  className={styles.HeaderWrapper}>
-                <div className={styles.logoHeader}>
-                    <Link href='/'>
-                        <a>
-                          <Image src="/img/logoBodesa.svg" objectFit="contain" layout="fill" alt="logo"/>  
-                        </a>
-                        
-                    </Link>
+                <div className={styles.containerLogo}>
+                    <div className={styles.logoHeader}>
+                        <Link href='/'>
+                            <a>
+                            <Image src="/img/logoBodesa.svg" objectFit="contain" layout="fill" alt="logo"/>  
+                            </a>
+                            
+                        </Link>
+                    </div> 
+                    <div className={styles.contactItem}>
+                        <div className={styles.IconCont}>
+                            <Image src="/img/cel.svg" objectFit='contain' layout='fill' alt="cel"/>
+                        </div>
+                        <div className={styles.txtItem}>
+                            <p className={styles.txtFooter}>+52 55 5555 5555</p>
+                        </div>
+                    </div> 
                 </div>
+                
                 <nav className={styles.navigate}>
                     <div>
                         <Link href='/'>Inicio</Link>
