@@ -45,7 +45,7 @@ const Header = () => {
                             <Image src="/img/cel.svg" objectFit='contain' layout='fill' alt="cel"/>
                         </div>
                         <div className={styles.txtItem}>
-                            <p className={styles.txtFooter}>+52 55 5555 5555</p>
+                            <p className={styles.txtFooter}>Contacto</p>
                         </div>
                     </div> 
                 </div>
