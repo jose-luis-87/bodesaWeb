@@ -14,10 +14,8 @@ const Home: NextPage = () => {
         <Hero/>
         <Status/>
         <Marcas/>
-        <MVV/>
-        <Galeria/>
         <BlogFeed/>
-        
+        <Galeria/>        
       </Layout>
   )
 }

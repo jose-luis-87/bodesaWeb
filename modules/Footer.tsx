@@ -30,17 +30,15 @@ const Footer = () => {
                     <p className={styles.txtFooter}>+52 55 5555 5555</p>
                 </div>
             </div>
-            <div  className={styles.socialCont}>
-                <div className={styles.iconSocial}>
-                    <Image src="/img/facebook.svg" objectFit='contain' layout='fill' alt="facebook"/>
+            <div className={styles.contactItem}>
+                <div className={styles.IconCont}>
+                    <Image src="/img/icon-linkedIn.svg" objectFit='contain' layout='fill' alt="cel"/>
                 </div>
-                <div className={styles.iconSocial}>
-                    <Image src="/img/instagram.svg" objectFit='contain' layout='fill' alt="instagram"/>
-                </div>
-                <div className={styles.iconSocial}>
-                    <Image src="/img/youtube.svg" objectFit='contain' layout='fill' alt="yt"/>
+                <div className={styles.txtItem}>
+                    <p className={styles.txtFooter}>síguenos en LinkedIn</p>
                 </div>
             </div>
+            
             <p className={styles.privacidad}>Aviso de privacidad</p>
         </div>
         <div className={styles.columnFooter}>

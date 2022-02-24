@@ -1,10 +1,10 @@
 .wrapperFooter{
     display: flex;
-    height: 40vh;
+    height: 50vh;
     width: 100%;
-    background-color: rgba(29, 67, 41, 1);
+    background-color: #DADDDD;
     justify-content: space-around;
-    padding: 2%;
+    padding: 1%;
 }
 .columnFooter{
     display: flex;
@@ -16,7 +16,7 @@
     align-items: center;
 }
 .titleSection{
-    color: rgba(218, 221, 221, 1);
+    color: #404545;
     width: 100%;
     margin-bottom: 18px;
 }
@@ -42,7 +42,7 @@
 .txtFooter{
     text-align: left;
     width: 100%;
-    color: rgba(218, 221, 221, 1);
+    color: #404545;
 }
 .contactItem{
     display: flex;
@@ -80,7 +80,7 @@
 .privacidad{
     width: 100%;
     height: 40px;
-    color: #dddddd;
+    color: #404545;
     text-align: center;
     margin-top: 24px;
 }
