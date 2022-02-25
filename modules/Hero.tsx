@@ -9,8 +9,6 @@ const Hero = () => {
 
   const {width, height} = useScreenSize()
 
-  
-
   return <div  className={styles.HeroWrapper}>
             <div className={styles.wrapperLeft}>
                 <H1 txt={'Reconocida en 2010 como una de las mejores empresas Mexicanas'}/>
@@ -18,9 +16,7 @@ const Hero = () => {
             </div>
             
             <div className={styles.wrapperRight}>
-                <div className={styles.square}>
-
-                </div>
+                <div className={styles.square}></div>
                 <div className={styles.squareImg}>
                     <Image className={styles.imgSquare} src="/img/heroimg.jpg" objectFit='cover' layout='fill' alt='marina'/>
                 </div>

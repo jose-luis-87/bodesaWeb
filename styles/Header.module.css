@@ -54,6 +54,9 @@
 .txtItem{
     margin-left: 24px;
 }
+.txtCont{
+    cursor: pointer;
+}
 @media(max-width: 768px){
     .HeaderWrapper{
         height:10%;
