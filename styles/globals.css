@@ -66,3 +66,21 @@ h3{
   margin-block-start: 0.0em;
   margin-block-end: 0.0em;
 }
+label{
+  margin-bottom: 12px;
+}
+select, textarea{
+  background-color: transparent;
+  border: 2px solid #1D4329;
+  color: #1D4329;
+  margin-bottom: 24px;
+  font-size: calc(0.75rem + ((1vw - 3.2px) * 1));
+  padding: 4px;
+}
+input{
+  background-color: transparent;
+  border: 2px solid #1D4329;
+  color: #1D4329;
+  font-size: calc(0.75rem + ((1vw - 3.2px) * 1));
+  padding: 4px;
+}

@@ -1,0 +1,29 @@
+.wrapperOption{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 30%;
+    border: 2px solid #1D4329;
+    border-radius: 8px;
+    min-height: 30px;
+    padding: 8px;
+}
+.iconTxt{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 90%;
+    align-items: center;
+    justify-content: flex-start;
+}
+.beforeIcon{
+    position: relative;
+    width: 10%;
+    height: 100%;
+}
+.afterIcon{
+    position: relative;
+    width: 10%;
+}
+.txt{
+    padding-left: 24px;
+    font-weight: 500;
+}

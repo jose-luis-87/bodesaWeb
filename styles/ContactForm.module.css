@@ -1,0 +1,33 @@
+.wrapperForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    flex-flow: column wrap;
+}
+.motives{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.form{
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    margin-top: 32px;
+}
+.wrapperName{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: 32px;
+    justify-content: space-between;
+}
+.inputCont{
+    display: flex;
+    width: 48%;
+    display: flex;
+    flex-flow: column wrap;
+}
