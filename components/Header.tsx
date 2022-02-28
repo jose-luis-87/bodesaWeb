@@ -12,7 +12,7 @@ const Header = () => {
   useEffect(() => {
     window.onscroll = ()=>{
         let y = window.scrollY
-        console.log(scrolling);
+        
         console.log(y);
         setActualScroll(y)
         if( actualScroll !== 0 ){

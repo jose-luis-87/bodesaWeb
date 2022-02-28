@@ -73,7 +73,20 @@ const ContactForm = () => {
                     <input type="text" name='apellido' placeholder='Apellido' />
                 </div>
             </div>
+            <h4 className={styles.subtitle}>Gracias ¿Cómo te gustaría que nos pusiéramos en contacto contigo?</h4>
+            <div className={styles.wrapperName}>
+                <div className={styles.inputCont}>
+                    <label htmlFor="email">Enviarme un correo electrónico*</label>
+                    <input type="text" name='email' placeholder='email@ejemplo.com' />
+                </div>
+                <div className={styles.inputCont}>
+                    <label htmlFor="numero">Llamarme</label>
+                    <input type="text" name='numero' placeholder='Número de teléfono' />
+                </div>
+            </div>
         </div>
+        
+        
     </div>
   )
 }

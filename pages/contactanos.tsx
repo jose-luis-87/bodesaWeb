@@ -1,12 +1,14 @@
 import { NextPage } from 'next'
+import { useRouter } from 'next/router'
 import React from 'react'
 import Layout from '../components/Layout'
 import ContactForm from '../modules/ContactForm'
 import styles from '../styles/Contactanos.module.css'
 
 const Contactanos: NextPage = () => {
+
   return (
-    <Layout>
+    <Layout pagina={'Contáctanos'}>
         <div className={styles.wrapperContact}>
           <h1 className={styles.contactTitle}>Déjanos un mensaje</h1>
           <ContactForm/>

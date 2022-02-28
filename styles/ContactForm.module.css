@@ -31,3 +31,7 @@
     display: flex;
     flex-flow: column wrap;
 }
+.subtitle{
+    margin-bottom: 24px;
+    margin-top: 12px;
+}
