@@ -5,11 +5,11 @@ import Card from '../components/Card';
 import useScreenSize from '../hooks/useScreenSize';
 import { useEffect, useState } from 'react';
 
-const Hero = () => {
+const Hero = ({forwardRef}:any) => {
 
   const {width, height} = useScreenSize()
 
-  return <div  className={styles.HeroWrapper}>
+  return <div  className={styles.HeroWrapper} ref={forwardRef}>
             <div className={styles.wrapperLeft}>
                 <H1 txt={'Reconocida en 2010 como una de las mejores empresas Mexicanas'}/>
                 <P themed txt={'por Delloite, Banmex e ITESM, por sus procesos de negocios, en un comparativo de gestión empresarial altamene técnico y exigete'}/> 

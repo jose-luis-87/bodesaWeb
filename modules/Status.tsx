@@ -3,8 +3,9 @@ import React from 'react';
 import { H1, P } from '../components/Texts';
 import styles from '../styles/Status.module.css'
 
-const Status = () => {
-  return <div className={styles.wrapperStatus}>
+const Status = ({forwardRef}:any) => {
+
+  return <div className={styles.wrapperStatus} ref={forwardRef}>
             <div className={styles.wrapperLeft}>
                 <div className={styles.roundedImg}>
                     <Image className={styles.imgSquare} src="/img/statusimg.jpg" objectFit='cover' layout='fill' alt='marina'/>

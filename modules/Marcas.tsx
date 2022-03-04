@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { useRef } from 'react';
 import styles from '../styles/Marcas.module.css';
 
-const Marcas = () => {
+const Marcas = ({forwardRef}:any) => {
 
 let sliderRef = useRef<any>()
 
@@ -24,7 +24,7 @@ let sliderRef = useRef<any>()
     
 }
 
-  return <div className={styles.wrapperMarcas}>
+  return <div className={styles.wrapperMarcas} ref={forwardRef}>
             <h1 className={styles.titleMarca}>Nuestras Marcas</h1>
             <div className={styles.carouselCont}>
                 <div className={styles.snapper} ></div>

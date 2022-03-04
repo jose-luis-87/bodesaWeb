@@ -1,13 +1,14 @@
 import Link from "next/link"
 import Image from "next/image"
 import styles from '../styles/Header.module.css'
-import { useEffect, useState } from "react"
-import useScreenSize from "../hooks/useScreenSize"
+import { useContext, useEffect, useState } from "react"
+import { NavContext } from "../context/NavContext"
 
 const Header = () => {
   
   const [scrolling, setScrolling] = useState(false)
   const [actualScroll, setActualScroll] = useState(0)
+  const [, setSection] = useContext(NavContext)
 
   useEffect(() => {
     window.onscroll = ()=>{
@@ -53,22 +54,19 @@ const Header = () => {
                 </div>
                 
                 <nav className={styles.navigate}>
-                    <div>
-                        <Link href='/'>Inicio</Link>
+                    <div className={styles.itemNav}>
+                        <Link href='/' >Inicio</Link>
                     </div>
-                    <div>
-                        <p>Nosotros</p>
+                    <div className={styles.itemNav}>
+                        <p onClick={()=>setSection(1)}>Nuestro impacto</p>
                     </div>
-                    <div>
-                        <p>Nuestro impacto</p>
+                    <div className={styles.itemNav}>
+                        <p onClick={()=>setSection(2)}>Nuestras marcas</p>
                     </div>
-                    <div>
-                        <p>Nuestras marcas</p>
-                    </div>
-                    <div>
+                    <div className={styles.itemNav}>
                         <Link href='/blog'>Blog</Link>
                     </div>
-                    <div>
+                    <div className={styles.itemNav}>
                         <Link href='/prensa'>Prensa</Link>
                     </div>
                 </nav>

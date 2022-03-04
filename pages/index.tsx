@@ -5,15 +5,56 @@ import Status from '../modules/Status'
 import Marcas from '../modules/Marcas'
 import Galeria  from '../modules/Galeria'
 import BlogFeed from '../modules/BlogFeed'
+import { useContext, useEffect, useRef } from 'react'
+import { NavContext } from '../context/NavContext'
 
 const Home: NextPage = () => {
+
+  const [section] = useContext(NavContext)
+
+  const refHero = useRef()
+  const refStatus = useRef()
+  const refMarcas = useRef()
+  const refBlogFeed = useRef()
+
+  const scrollToRef = (ref:any) => {
+
+    window.scrollTo(0, ref.current.offsetTop);
+
+  }
+
+  useEffect(() => {
+
+
+    switch (section) {
+
+      case 0:
+        scrollToRef(refHero)
+        break;
+      case 1:
+        scrollToRef(refStatus)
+
+        break;
+      case 2:
+        scrollToRef(refMarcas)
+        break;
+      case 3:
+        scrollToRef(refBlogFeed)
+        break;
+      default:
+        window.scrollTo(0, 0);
+        break;
+    }
+
+  }, [section])
+
   return (
       <Layout pagina={'Inicio'}>
-        <Hero/>
-        <Status/>
-        <Marcas/>
-        <BlogFeed/>
-        <Galeria/>        
+        <Hero forwardRef={refHero}/>
+        <Status forwardRef={refStatus}/>
+        <Marcas forwardRef={refMarcas}/>
+        <BlogFeed forwardRef={refBlogFeed}/>
+        <Galeria />        
       </Layout>
   )
 }

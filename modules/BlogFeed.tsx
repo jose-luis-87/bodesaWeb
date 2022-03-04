@@ -5,7 +5,7 @@ import React, { useRef } from 'react'
 import useScreenSize from '../hooks/useScreenSize'
 import styles from '../styles/BlogFeed.module.css'
 
-const BlogFeed = () => {
+const BlogFeed = ({forwardRef}:any) => {
 
     
     let sliderRef = useRef<any>()
@@ -32,7 +32,7 @@ const BlogFeed = () => {
     }
 
   return (
-    <div className={styles.wrapperFeed}>
+    <div className={styles.wrapperFeed} ref={forwardRef}>
         <div className={styles.carouselCont}>
                 <div className={styles.arrowleft} onClick={scrollR}>
                     <Image src="/img/arrowleft.svg" objectFit='contain' layout='fill' alt="arrow-left"/>
