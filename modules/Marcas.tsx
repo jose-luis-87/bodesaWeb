@@ -40,7 +40,6 @@ let sliderRef = useRef<any>()
                     <Brand img={'/img/logo-naveri.png'}/>
                     <Brand img={'/img/celerity-logo.png'}/>
                     <Brand img={'/img/logomxl.png'}/>
-                    <Brand img={'/img/logo_135_marina.png'}/>
                 </Carousel>
             </div>
          </div>
