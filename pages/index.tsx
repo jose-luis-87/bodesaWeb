@@ -7,6 +7,7 @@ import Galeria  from '../modules/Galeria'
 import BlogFeed from '../modules/BlogFeed'
 import { useContext, useEffect, useRef } from 'react'
 import { NavContext } from '../context/NavContext'
+import SliderHero from '../components/SliderHero'
 
 const Home: NextPage = () => {
 
@@ -50,7 +51,8 @@ const Home: NextPage = () => {
 
   return (
       <Layout pagina={'Inicio'}>
-        <Hero forwardRef={refHero}/>
+        {/* <Hero forwardRef={refHero}/> */}
+        <SliderHero forwardRef={refHero}/>
         <Status forwardRef={refStatus}/>
         <Marcas forwardRef={refMarcas}/>
         <BlogFeed forwardRef={refBlogFeed}/>
