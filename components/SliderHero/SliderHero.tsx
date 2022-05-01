@@ -12,10 +12,10 @@ const SliderHero = ({forwardRef}:any) => {
     
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const scrollTo = (i:any) =>{
-      if(sliderRef){
+      
         bulletSwitch(i)
         setActualId(i)
-      }
+      
 
   }
   
