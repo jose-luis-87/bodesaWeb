@@ -14,7 +14,7 @@ const Galeria = () => {
 
   return (
     <div className={styles.wrapperGaleria}>
-        <h1 style={{color:'#1D4329', paddingLeft: '5%', width:'100%', marginTop: '4%'}}>Galería</h1>
+        <h1 style={{color:'#364a5a', paddingLeft: '5%', width:'100%', marginTop: '4%'}}>Galería</h1>
         <div className={styles.containerGaleria}>
             <div className={styles.containerImg} style={{gridArea:'small'}}>
                 <Image  src="/img/galeria.jpg" objectFit='cover' layout='fill' alt='gal1'/>

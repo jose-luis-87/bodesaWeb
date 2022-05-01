@@ -6,9 +6,9 @@
     left: 0;
     z-index: 100;
     width: 100%;
-    background:  #F4F5F5;
+    background:  #364a5a;
     justify-content: space-between;
-    height:16%;
+    height:10%;
     
 }
 .navigate{
@@ -18,8 +18,7 @@
     width: 100%;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #DADDDD;
-    
+    color: #ffffff;
     padding-left: 24px;
     padding-right: 24px;
 }
@@ -27,7 +26,7 @@
     display: flex;
     width: 100%;
     position: relative;
-    height: 60%;
+    height: 100%;
     padding: 14px;
     justify-content: center;
     align-items: center;
@@ -60,6 +59,15 @@
 
 .itemNav{
     cursor: pointer;
+    color: #ffffff;
+}
+.itemNav>p{
+    cursor: pointer;
+    color: #ffffff;
+}
+.itemNav>a{
+    cursor: pointer;
+    color: #ffffff;
 }
 @media(max-width: 768px){
     .HeaderWrapper{

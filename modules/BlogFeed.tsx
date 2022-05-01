@@ -75,7 +75,7 @@ export const CardBlog = ({callBack, w, f, himg, img}: any)=>{
                     <p style={{ marginBottom: '32px'}}>Publicado por: <span>Juan García</span> | 14/01/2022</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat in nulla vestibulum pharetra. Velit egestas nec massa, imperdiet nunc tellus ridiculus placera...</p>
                     <Link href={`/post/name-blog`} passHref>
-                        <p style={{ marginTop: '32px', textAlign: 'right', width: '100%', color:'#2D673E', fontWeight: '900', cursor: 'pointer'}}>Leer más...</p>
+                        <p style={{ marginTop: '32px', textAlign: 'right', width: '100%', color:'#8b9191', fontWeight: '900', cursor: 'pointer'}}>Leer más...</p>
                     </Link>
                 </div>
            </div>

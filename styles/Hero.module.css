@@ -44,7 +44,7 @@
 .square{
     width: 70%;
     height: 60%;
-    background-color: #B4DEC1;
+    background-color: #e6e6e6;
     position: absolute;
     transform: rotate(-6deg);
     border-radius: 48px;

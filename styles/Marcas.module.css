@@ -44,7 +44,7 @@
 }
 
 .snapper{
-    background-color: #D8EEDF;
+    background-color: #364a5a;
     opacity: .5;
     width: 90%;
     height: 45%;
@@ -79,7 +79,7 @@
     top: 20%;
     left: 3%;
     border-radius: 20px;
-    box-shadow: 0px 25px 50px -12px #005200;
+    box-shadow: 0px 25px 50px -12px #364a5a;
     cursor: pointer;
     z-index: 10;
 }
@@ -91,7 +91,7 @@
     top: 20%;
     right: 3.2%;
     border-radius: 20px;
-    box-shadow: 0px 25px 50px -12px #005200;
+    box-shadow: 0px 25px 50px -12px #364a5a;
     transform: rotate(180deg);
     cursor: pointer;
     z-index: 10;

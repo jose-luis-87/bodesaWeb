@@ -35,10 +35,12 @@ let sliderRef = useRef<any>()
                     <Image src="/img/arrowleft.svg" objectFit='contain' layout='fill' alt="arrow-right"/>
                 </div>
                 <Carousel forwardRef={sliderRef}>
+                    <Brand img={'/img/logo_135_marina.png'}/>
                     <Brand img={'/img/logo-bodegon.png'}/>
                     <Brand img={'/img/logo-naveri.png'}/>
                     <Brand img={'/img/celerity-logo.png'}/>
                     <Brand img={'/img/logomxl.png'}/>
+                    <Brand img={'/img/logo_135_marina.png'}/>
                 </Carousel>
             </div>
          </div>
