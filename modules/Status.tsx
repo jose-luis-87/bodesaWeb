@@ -8,14 +8,14 @@ const Status = ({forwardRef}:any) => {
   return <div className={styles.wrapperStatus} ref={forwardRef}>
             <div className={styles.wrapperLeft}>
                 <div className={styles.roundedImg}>
-                    <Image className={styles.imgSquare} src="/img/statusimg.jpg" objectFit='cover' layout='fill' alt='marina'/>
+                    <Image className={styles.imgSquare} src="/img/statusimg.jpg" objectFit='contain' width={'500px'}  height={'500px'} alt='marina'/>
                 </div>
                 <CardStatus/>
             </div>
             <div className={styles.wrapperRight}>
-                <h1 className={styles.titleStatus}>Estatus actual de negocios</h1>
+                <h1 className={styles.titleStatus}>Quiénes Somos</h1>
                 <P txt={''}/>
-                <p className={styles.txtStatus}>Tiendas departamentales: 6 tiendas marca La Marina con <span>42,000m2</span> y ubicadas en ciudades de al menos <span>150,000 habitantes;</span> concetradas principalmente en un segmento de mercado inmediato a alto ingreso. Ofrece <span>marcas de prestigio nacional  internacional</span></p>
+                <p className={styles.txtStatus}>Bodesa fundó en 1887 su primera tienda departamental La Marina en la Ciudad de Colima, ofreciendo moda y estilo de vida para toda la familia y el hogar, donde los consumidores pueden encontrar marcas de prestigio nacional e internacional. </p>
             </div>
          </div>
 };

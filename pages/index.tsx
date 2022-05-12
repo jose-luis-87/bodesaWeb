@@ -1,5 +1,4 @@
 import type { NextPage } from 'next'
-import Hero from '../modules/Hero'
 import Layout from '../components/Layout'
 import Status from '../modules/Status'
 import Marcas from '../modules/Marcas'
@@ -8,6 +7,7 @@ import BlogFeed from '../modules/BlogFeed'
 import { useContext, useEffect, useRef } from 'react'
 import { NavContext } from '../context/NavContext'
 import SliderHero from '../components/SliderHero'
+import MVV from '../modules/MVV'
 
 const Home: NextPage = () => {
 
@@ -54,9 +54,10 @@ const Home: NextPage = () => {
         {/* <Hero forwardRef={refHero}/> */}
         <SliderHero forwardRef={refHero}/>
         <Status forwardRef={refStatus}/>
+        <MVV/>
         <Marcas forwardRef={refMarcas}/>
+        <Galeria />   
         <BlogFeed forwardRef={refBlogFeed}/>
-        <Galeria />        
       </Layout>
   )
 }

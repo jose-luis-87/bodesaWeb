@@ -36,7 +36,7 @@ const Header = () => {
                     <div className={styles.logoHeader}>
                         <Link href='/'>
                             <a>
-                            <Image src="/img/logo_bodesa.png" objectFit="contain" layout="fill" alt="logo"/>  
+                            <Image src="/img/logo135.png" objectFit="contain" layout="fill" alt="logo"/>  
                             </a>
                             
                         </Link>
@@ -46,7 +46,7 @@ const Header = () => {
                             <Link href='/' >Inicio</Link>
                         </div>
                         <div className={styles.itemNav}>
-                            <p onClick={()=>setSection(1)}>Nuestro impacto</p>
+                            <p onClick={()=>setSection(1)}>Quiénes somos</p>
                         </div>
                         <div className={styles.itemNav}>
                             <p onClick={()=>setSection(2)}>Nuestras marcas</p>

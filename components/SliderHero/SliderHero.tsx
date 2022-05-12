@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import styles from './SliderHero.module.css'
-import Hero from '../../modules/Hero'
+import {HeroDos, HeroTres, HeroUno} from '../../modules/Hero'
 
 const SliderHero = ({forwardRef}:any) => {
   
@@ -73,13 +73,13 @@ const SliderHero = ({forwardRef}:any) => {
         <Bullets scrollTo={scrollTo} />
         <Carousel forwardRef={sliderRef}>
             <Slide>
-                <Hero/>
+                <HeroUno/>
             </Slide>
             <Slide>
-                <p>Slide2</p>
+                <HeroDos/>
             </Slide>
             <Slide>
-                <p>Slide3</p>
+                <HeroTres/>
             </Slide>
         </Carousel>
     </div>

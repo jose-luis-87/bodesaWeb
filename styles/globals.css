@@ -38,16 +38,16 @@ img {
  a{
    text-decoration: none;
    color:#364a5a;
-   font-size: calc(0.75rem + ((1vw - 3.2px) * 1));
+   font-size: calc(0.70rem + ((1vw - 3px) * 1));
  }
  p{
-  font-size: calc(0.75rem + ((1vw - 3.2px) * 1));
+  font-size: calc(0.70rem + ((1vw - 3px) * 1));
   color:#364a5a;
   margin-block-start: 0.3em;
   margin-block-end: 0.3em;
 }
 span{
-  font-size: calc(0.75rem + ((1vw - 3.2px) * 1));
+  font-size: calc(0.70rem + ((1vw - 3px) * 1));
   color:#364a5a;
   font-weight: bold;
 }
