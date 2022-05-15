@@ -8,6 +8,7 @@ import { useContext, useEffect, useRef } from 'react'
 import { NavContext } from '../context/NavContext'
 import SliderHero from '../components/SliderHero'
 import MVV from '../modules/MVV'
+import Distinciones from '../modules/Distinciones'
 
 const Home: NextPage = () => {
 
@@ -55,6 +56,7 @@ const Home: NextPage = () => {
         <SliderHero forwardRef={refHero}/>
         <Status forwardRef={refStatus}/>
         <MVV/>
+        <Distinciones/>
         <Marcas forwardRef={refMarcas}/>
         <Galeria />   
         <BlogFeed forwardRef={refBlogFeed}/>
