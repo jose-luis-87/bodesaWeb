@@ -10,7 +10,7 @@ const Contactanos: NextPage = () => {
   return (
     <Layout pagina={'Contáctanos'}>
         <div className={styles.wrapperContact}>
-          <h1 className={styles.contactTitle}>Déjanos un mensaje</h1>
+          <h1 className={styles.contactTitle}>¿Quieres ser Proveedor?</h1>
           <ContactForm/>
         </div>
     </Layout>

@@ -1,0 +1,26 @@
+{
+    "sustentabilidad":{
+        "img":"/img/placeholder.png",
+        "title": "Sustentabilidad Ambiental",
+        "autor": "Bodesa",
+        "content":"BODESA, comprometidos con el medio ambiente<br/>En BODESA estamos preocupados por el cuidado del medio ambiente, es por ello, que hemos buscado invertir en el uso de energías renovables y reducir el impacto ambiental.<br/>¿Qué es una energía limpia?<br/>Es la que se genera a partir de fuentes naturales como el viento, el agua o el sol y que su producción no contamina ni genera residuos.<br/>En Bodesa, elegimos la energía solar para captarla y trasformarla en energía eléctrica. Hemos instalado más de 4 mil paneles solares en nuestras tiendas y oficinas centrales  Estas acciones equivalen a evitar generar 2,883 toneladas de carbono al año, lo que representaría plantar 118,299 árboles para compensar esta huella de carbono."
+    },
+    "por-un-mundo-verde":{
+        "img":"/img/placeholder.png",
+        "title": "Por un mundo Verde",
+        "autor": "Bodesa",
+        "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis molestie, lacus sed sollicitudin scelerisque, leo ligula tempor neque, a pellentesque nunc velit vel eros. Fusce rhoncus ultrices ex. Nam fermentum urna in risus aliquam semper. Integer quis gravida elit. Cras sit amet sem vel neque dapibus mollis. Nunc lorem lorem, pretium non egestas id, varius sit amet est. Suspendisse tristique euismod ipsum et tempus. Sed eget est ut lorem bibendum cursus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum et iaculis ligula, eget tempus nisl. Nullam interdum ligula lacus, nec iaculis tellus lobortis tristique."
+    },
+    "ecología":{
+        "img":"/img/placeholder.png",
+        "title": "Ecología",
+        "autor": "Bodesa",
+        "content":""
+    },
+    "impacto":{
+        "img":"/img/placeholder.png",
+        "title": "Impacto en la comunidad",
+        "autor": "Bodesa",
+        "content":"Sed ante erat, fermentum ac tristique vel, consectetur sit amet lorem. Proin lobortis nisi vel ultrices varius. Mauris ultrices lorem orci, id fermentum augue fermentum non. In elementum, mi at tempus fringilla, enim enim pulvinar augue, vitae vestibulum lectus velit suscipit felis. In hac habitasse platea dictumst. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse nunc nunc, fringilla sed aliquet ut, posuere in velit."
+    }
+}

@@ -17,6 +17,7 @@ const Home: NextPage = () => {
   const refHero = useRef()
   const refStatus = useRef()
   const refMarcas = useRef()
+  const refDist = useRef()
   const refBlogFeed = useRef()
 
   const scrollToRef = (ref:any) => {
@@ -43,6 +44,9 @@ const Home: NextPage = () => {
       case 3:
         scrollToRef(refBlogFeed)
         break;
+      case 4:
+        scrollToRef(refDist)
+        break;
       default:
         window.scrollTo(0, 0);
         break;
@@ -56,7 +60,7 @@ const Home: NextPage = () => {
         <SliderHero forwardRef={refHero}/>
         <Status forwardRef={refStatus}/>
         <MVV/>
-        <Distinciones/>
+        <Distinciones forwardRef={refDist}/>
         <Marcas forwardRef={refMarcas}/>
         <Galeria />   
         <BlogFeed forwardRef={refBlogFeed}/>

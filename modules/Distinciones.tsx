@@ -2,9 +2,9 @@ import React from 'react'
 import Image from 'next/image'
 import styles from '../styles/Distinciones.module.css'
 
-const Distinciones = () => {
+const Distinciones = ({forwardRef}:any) => {
   return (
-    <div className={styles.distinciones}>
+    <div className={styles.distinciones} ref={forwardRef}>
         <div className={styles.logosDist}>
                 <div className={styles.imgDist}>
                     <Image src="/img/lmem.png" objectFit='contain' layout='fill' alt="lmem"/>

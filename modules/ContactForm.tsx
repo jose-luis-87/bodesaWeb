@@ -13,7 +13,7 @@ const ContactForm = () => {
 
   const [motives, setMotives] = useState({p: true, q:false, sug:false})
     
-  const changeMotive = (motive:string)=>{
+  /* const changeMotive = (motive:string)=>{
     switch (motive) {
         case 'p':
             setMotives({p: true, q:false, sug:false})
@@ -28,22 +28,22 @@ const ContactForm = () => {
             setMotives({p: true, q:false, sug:false})
             break;
     }
-  }
-  useEffect(() => {
+  } */
+  /* useEffect(() => {
     console.log(motives);
     
-  }, [motives])
+  }, [motives]) */
   
 
   return (
     <div className={styles.wrapperForm}>
-        <div className={styles.motives}>
+        {/* <div className={styles.motives}>
             <OptionMotive txt='Pregunta' iconA={good} iconB={before} iconBL={pl} active={motives.p} callback={changeMotive} type='p'/>
             <OptionMotive txt='Queja' iconA={good} iconB={queja} iconBL={ql} active={motives.q} callback={changeMotive} type='q'/>
             <OptionMotive txt='Sugerencia' iconA={good} iconB={suge} iconBL={sugl} active={motives.sug} callback={changeMotive} type='s'/>
-        </div>
+        </div> */}
         <div className={styles.form}>
-            {
+            {/* {
                 motives.p && <> <label htmlFor="preguntas sobre">Una pregunta sobre...</label>
                                 <select name="preguntas sobre" id="">
                                     <option value="Option 1">Selecciona un motivo de contacto</option>
@@ -52,28 +52,48 @@ const ContactForm = () => {
                                     <option value="Option 4">Option 4</option>
                                     <option value="Option 5">Option 5</option>
                                 </select> </>
-            }
-            <label htmlFor="Mensaje">Tu mensaje</label>
-            <textarea name="Mensaje" id="" cols={30} rows={5}></textarea>
-            <label htmlFor="ubicacion">¿Dónde estás?</label>
-            <select name="ubicacion" id="">
-                <option value="Option 1">Selecciona un estado</option>
-                <option value="Option 2">Option 2</option>
-                <option value="Option 3">Option 3</option>
-                <option value="Option 4">Option 4</option>
-                <option value="Option 5">Option 5</option>
-            </select>
+            } */}
             <div className={styles.wrapperName}>
                 <div className={styles.inputCont}>
-                    <label htmlFor="nombre">Tu nombre</label>
-                    <input type="text" name='nombre' placeholder='Nombre' />
+                        <label htmlFor="numero">Tu marca comercial es:</label>
+                        <input type="text" name='numero' placeholder='Mi marca' />
                 </div>
                 <div className={styles.inputCont}>
-                    <label htmlFor="apellido">Tu apellido</label>
-                    <input type="text" name='apellido' placeholder='Apellido' />
+                        <label htmlFor="numero">Tu página web:</label>
+                        <input type="text" name='numero' placeholder='www.miweb.com' />
                 </div>
             </div>
+
+            <div className={styles.wrapperName}>
+                <div className={styles.inputCont}>
+                <label htmlFor="ubicacion">Producto:</label>
+                <select name="ubicacion" id="">
+                    <option value="Option 1">Hardline</option>
+                    <option value="Option 2">SoftLine</option>
+                </select></div>
+                <div className={styles.inputCont}>
+                <label htmlFor="ubicacion">Servicios:</label>
+                <select name="ubicacion" id="">
+                    <option value="Option 1">Logísticos</option>
+                    <option value="Option 2">Reparación y Mantenimiento</option>
+                    <option value="Option 3">Limpieza</option>
+                    <option value="Option 4">Almacenaje</option>
+                    <option value="Option 5">Mercadotecnia y Publicidad</option>
+                    <option value="Option 5">Financieros</option>
+                    <option value="Option 5">Otros</option>
+                </select></div>
+                
+            </div>
+            <label htmlFor="nombre">Marketplace</label>
+            <input type="text" name='nombre' placeholder='www.mimarketplace.com' />
+            {/* <label htmlFor="Mensaje">Tu mensaje</label>
+            <textarea name="Mensaje" id="" cols={30} rows={5}></textarea> */}
             <h4 className={styles.subtitle}>Gracias ¿Cómo te gustaría que nos pusiéramos en contacto contigo?</h4>
+         
+            <label htmlFor="nombre">Nombre completo</label>
+            <input type="text" name='nombre' placeholder='Nombre' />
+            
+            
             <div className={styles.wrapperName}>
                 <div className={styles.inputCont}>
                     <label htmlFor="email">Enviarme un correo electrónico*</label>
@@ -83,6 +103,9 @@ const ContactForm = () => {
                     <label htmlFor="numero">Llamarme</label>
                     <input type="text" name='numero' placeholder='Número de teléfono' />
                 </div>
+            </div>
+            <div className={styles.wrapperCheck} style={{marginBottom: '24px'}}>
+                <input type="checkbox" id="cbox2" value="second_checkbox"/> <label>He leído y Acepto que BODESA; SAPI DE CV protegerá mis datos como se detalla en el Aviso de privacidad</label>
             </div>
         </div>
         

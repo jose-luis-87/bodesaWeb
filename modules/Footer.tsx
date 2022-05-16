@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React, { useContext } from 'react'
 import { NavContext } from '../context/NavContext'
 import styles from '../styles/Footer.module.css'
@@ -14,16 +15,16 @@ const Footer = () => {
         <div className={styles.columnFooter}>
             <h3 className={styles.titleSection}>Empresa</h3>
             <p className={styles.txtFooter} onClick={()=>setSection(1)}>¿Quiénes somos?</p>
-            <p className={styles.txtFooter}>Nuestra Historia</p>
-            <p className={styles.txtFooter}>Principios y valores</p>
-            <p className={styles.txtFooter}>Unidades de negocio</p>
-            <p className={styles.txtFooter}>¿Quieres ser Proveedor?</p>
+            <p className={styles.txtFooter} onClick={()=>setSection(4)}>Nuestra Historia</p>
+            <Link href='/principios'>Principios y valores</Link>
+            <p className={styles.txtFooter} onClick={()=>setSection(2)}>Unidades de negocio</p>
+            <Link href='/contactanos'>¿Quieres ser Proveedor?</Link>
             <p className={styles.txtFooter}>Prensa</p>
         </div>
         <div className={styles.columnFooter}>
             <h3 className={styles.titleSection}>Nuestro impacto</h3>
-            <p className={styles.txtFooter}>Impacto en la comunidad</p>
-            <p className={styles.txtFooter}>Sustentabilidad ambiental</p>
+            <Link href='/post/impacto'>Impacto en la comunidad</Link>
+            <Link href='/post/sustentabilidad'>¿Sustentabilidad ambiental</Link>
         </div>
         <div className={styles.columnFooter}>
             <h3 className={styles.titleSection}>Contacto</h3>

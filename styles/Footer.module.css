@@ -21,6 +21,19 @@
     justify-content: flex-start;
     align-items: center;
 }
+.columnFooter>a{
+    text-align: left;
+    width: 100%;
+    color: #ffffff;
+    font-size: calc(0.50rem + ((1vw - 3px) * 1));
+    cursor: pointer;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.columnFooter>a:hover{
+    
+    color: #8B9191;
+}
 .titleSection{
     color: #ffffff;
     width: 100%;
