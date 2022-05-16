@@ -24,7 +24,7 @@ const Footer = () => {
         <div className={styles.columnFooter}>
             <h3 className={styles.titleSection}>Nuestro impacto</h3>
             <Link href='/post/impacto'>Impacto en la comunidad</Link>
-            <Link href='/post/sustentabilidad'>¿Sustentabilidad ambiental</Link>
+            <Link href='/post/sustentabilidad'>Sustentabilidad ambiental</Link>
         </div>
         <div className={styles.columnFooter}>
             <h3 className={styles.titleSection}>Contacto</h3>
